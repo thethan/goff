@@ -923,7 +923,7 @@ func TestGetUserLeaguesMapsYear(t *testing.T) {
 		Provider: provider,
 	}
 
-	client.GetUserLeagues("2013")
+	client.GetUserLeagues("2019")
 	yearParam := "game_keys"
 	assertURLContainsParam(t, provider.lastGetURL, yearParam, "314")
 
